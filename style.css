@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: #c9c4c4;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    height: 700px;
+    margin-top: 100px;
+}
+
+#tasks {
+    list-style: none;
+    padding: 0;
+}
+
+.main_btn {
+    font-size: 13px;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+}
+
+#newTask {
+    width: 154px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 10px 10px;
+    color: #000000;
+}
+
+.main_btn_gradient {
+    background: linear-gradient(214.02deg, #B75cff 6.04%, #671ae4 92.95%);
+    margin-right: 20px;
+}
+
+#tasks li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+#tasks li.completed {
+    text-decoration: line-through;
+}
+
+#tasks li button {
+    background: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+#tasks li .edit-btn {
+    background: #43d816;
+    margin-right: 5px;
+}
+
+#tasks li input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    margin-right: 5px;
+}
